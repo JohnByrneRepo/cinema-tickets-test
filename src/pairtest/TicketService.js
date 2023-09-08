@@ -85,13 +85,6 @@ class SeatReservationService {
   }
 }
 
-// class InvalidPurchaseException extends Error {
-//   constructor(message) {
-//     super(message);
-//     this.name = 'InvalidPurchaseException';
-//   }
-// }
-
 const seatReservationService = new SeatReservationService();
 const ticketService = new TicketService(paymentService, seatReservationService);
 
